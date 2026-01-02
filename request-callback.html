@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request a Callback</title>
+</head>
+<body>
+    <form action="{% url 'request-callback' %}" method="post">
+        {% csrf_token %}
+        <h1>Request a Callback</h1>
+        <p>Fill the form below to request a callback from our team</p>
+        <label for="name">Name
+            <input type="text" placeholder="Name">
+        </label>
+        <label for="number">Phone
+            <input type="number" placeholder="Phone">
+        </label>
+        <label for="date">When Should we call you? 🗓️
+            <input type="datetime" placeholder="Enter your date and time">
+        </label>
+        <label for="">Enquiry for 🗓️
+            <input type="datetime" placeholder="Courses">
+        </label>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

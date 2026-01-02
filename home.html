@@ -1,0 +1,274 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreyians Clone</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-left">
+            <img src="{% static 'images/logo.png' %}" class="logo" alt="Logo">
+            <span class="brand">Sheryians<br>coding school</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Bootcamp ▼</a></li>
+            <li><a href="request-callback">Request Callback</a></li>
+        </ul>
+
+        <button class="signin-btn">Sign In</button>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>We only <span class="green">teach</span><br>
+                what we are really<br>
+                really <span class="italic">good</span> at.</h1>
+
+            <p class="hero-side-text">
+                Get ready to <span class="green">accelerate your<br>career</span> with customized courses<br>
+                and leave your mark in the tech<br>industry
+            </p>
+
+            <button class="cta-btn">Check Courses - Make an Impact</button>
+        </div>
+
+        <div class="hero-stats">
+            <div>
+                <h2>250k+</h2>
+                <p>Students taught</p>
+            </div>
+            <div>
+                <h2>20+</h2>
+                <p>Instructors</p>
+            </div>
+            <div>
+                <h2>607K+</h2>
+                <p>YouTube Subs.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-section">
+        <h1 class="video-heading">
+            we do whatever it takes to help you<br>
+            <span class="green">understand the concepts.</span>
+        </h1>
+
+        <div class="video-wrapper">
+            <iframe width="100%" height="460" 
+                src="https://youtu.be/60SRAWmMXyc"
+                title="YouTube video"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+    <section class="courses">
+        <h1 class="courses-title">Courses Offered.</h1>
+
+        <div class="courses-container">
+
+            <div class="course-card">
+                <img src="{% static 'images/course2.jpeg' %}" class="course-img">
+
+                <div class="course-body">
+                    <h2>Data Science and Analytics with GenAI</h2>
+                    <span class="tag">HINGLISH</span>
+                    <p class="discount-text">Limited Time Discount</p>
+                    <div class="price-box">
+                        <span class="price">₹ 6999</span>
+                        <span class="old-price">₹ 15000</span>
+                        <span class="off">53% OFF</span>
+                    </div>
+                </div>
+
+                <a href="{% url 'course_detail' %}">
+                    <button class="details-btn">View Details</button>
+                </a>
+            </div>
+
+            <!-- COURSE CARD 2 -->
+            <div class="course-card">
+                <img src="{% static 'images/course1.jpeg' %}" class="course-img">
+
+                <div class="course-body">
+                    <h2>2.0 Job Ready AI Powered Cohort:Web + DSA + Aptitude</h2>
+
+                    <span class="tag red">LIVE BATCH</span>
+                    <span class="tag">HINGLISH</span>
+
+                    <p class="discount-text">Early Bird Discount</p>
+                    <div class="price-box">
+                        <span class="price">₹ 5999 (+GST)</span>
+                        <span class="old-price">₹ 11999</span>
+                        <span class="off">50% OFF</span>
+                    </div>
+                </div>
+
+                <a href="{% url 'course_detail' %}">
+                    <button class="details-btn">View Details</button>
+                </a>
+            </div>
+
+            <!-- COURSE CARD 3 -->
+            <div class="course-card">
+                <img src="{% static 'images/course3.jpeg' %}" class="course-img">
+
+                <div class="course-body">
+                    <h2>DSA Domination Cohort</h2>
+
+                    <span class="tag red">LIVE BATCH</span>
+                    <span class="tag">HINGLISH</span>
+
+                    <p class="discount-text">Limited Time Discount</p>
+                    <div class="price-box">
+                        <span class="price">₹ 6600 (+GST)</span>
+                        <span class="old-price">₹ 7500</span>
+                        <span class="off">12% OFF</span>
+                    </div>
+                </div>
+
+                <a href="{% url 'course_detail' %}">
+                    <button class="details-btn">View Details</button>
+                </a>
+            </div>
+
+            <div class="course-card">
+                <img src="{% static 'images/course4.JPG' %}" class="course-img">
+
+                <div class="course-body">
+                    <h2>Job Ready AI Powered Cohort: Web + DSA + Aptitude</h2>
+
+                    <span class="tag red">LIVE BATCH</span>
+                    <span class="tag">HINGLISH</span>
+
+                    <p class="discount-text">Limited Time Discount</p>
+                    <div class="price-box">
+                        <span class="price">₹ 5999 (+GST)</span>
+                        <span class="old-price">₹ 11999</span>
+                        <span class="off">50% OFF</span>
+                    </div>
+                </div>
+
+                <a href="{% url 'course_detail' %}">
+                    <button class="details-btn">View Details</button>
+                </a>
+            </div>
+
+            <div class="course-card">
+                <img src="{% static 'images/course5.jpg' %}" class="course-img">
+
+                <div class="course-body">
+                    <h2>Three.js Domination</h2>
+
+                    <span class="tag">HINDI</span>
+
+                    <p class="discount-text">Limited Time Discount</p>
+                    <div class="price-box">
+                        <span class="price">₹ 2499 (+GST)</span>
+                        <span class="old-price">₹ 3500</span>
+                        <span class="off">29% OFF</span>
+                    </div>
+                </div>
+
+                <a href="{% url 'course_detail' %}">
+                    <button class="details-btn">View Details</button>
+                </a>
+            </div>
+
+            <div class="course-card">
+                <img src="{% static 'images/course6.jpeg' %}" class="course-img">
+
+                <div class="course-body">
+                    <h2>Java & DSA Domination</h2>
+
+                    <span class="tag">HINGLISH</span>
+
+                    <p class="discount-text">Limited Time Discount</p>
+                    <div class="price-box">
+                        <span class="price">₹ 4999 (+GST)</span>
+                        <span class="old-price">₹ 9999</span>
+                        <span class="off">50% OFF</span>
+                    </div>
+                </div>
+
+                <a href="{% url 'course_detail' %}">
+                    <button class="details-btn">View Details</button>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===================== COMPANIES SECTION ===================== -->
+<section class="companies-section">
+    <h1>Top <span>companies</span> our students<br> working with</h1>
+
+    <!-- Your single companies image -->
+    <div class="companies-image">
+        <img src="{% static 'images/companies.png' %}" alt="Companies">
+    </div>
+
+    <button class="explore-btn">Explore Courses</button>
+</section>
+
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+    <div class="footer-container">
+
+        <!-- Social Column -->
+        <div class="footer-col">
+            <img src="{% static 'images/logo.png' %}" class="footer-logo" alt="">
+            <p>Let's connect with our socials</p>
+
+            <div class="social-icons">
+                <img src="{% static 'images/discord.png' %}">
+                <img src="{% static 'images/discord.png' %}">
+                <img src="{% static 'images/discord.png' %}">
+                <img src="{% static 'images/discord.png' %}">
+                <img src="{% static 'images/discord.png' %}">
+            </div>
+        </div>
+        <!-- Company Column -->
+        <div class="footer-col">
+            <h3>COMPANY</h3>
+            <a href="#">About Us</a>
+            <a href="#">Support</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms and Condition</a>
+            <a href="#">Pricing and Refund</a>
+            <a href="#">Hire From Us</a>
+            <a href="#">Submit Projects</a>
+        </div>
+        <!-- Community Column -->
+        <div class="footer-col">
+            <h3>COMMUNITY</h3>
+            <a href="#">Discord</a>
+            <a href="#">Jobs</a>
+        </div>
+        <!-- Contact Column -->
+        <div class="footer-col">
+            <h3>Get In Touch</h3>
+            <p>Online: 11am - 8pm<br><span class="phone">+91 9993478545</span></p>
+            <p>Offline: 11am - 8pm<br><span class="phone">+91 96917 78470</span></p>
+            <p>hello@sheryians.com</p>
+            <p>23-B, Indrapuri Sector C,<br>Bhopal(MP), 462021</p>
+        </div>
+
+    </div>
+    <div class="footer-bottom">
+        Copyright © 2025 Sheryians Pvt. Ltd.<br>
+        All Rights Reserved.
+    </div>
+</footer>
+</body>
+</html>
